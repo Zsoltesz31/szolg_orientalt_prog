@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:8080/KonyvtarService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:8080/KonyvtarService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:8080/KonyvtarService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:8080/KonyvtarService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/KonyvtarService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_ListKonyvek_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListKonyvek" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListKonyvek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListKonyvekResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ListKonyvek_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/System" name="detail" element="q1:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Register_InputMessage">
+    <wsdl:part name="parameters" element="tns:Register" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Register_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Register_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/System" name="detail" element="q2:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Login_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/System" name="detail" element="q3:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertKonyv_InputMessage">
+    <wsdl:part name="parameters" element="tns:InsertKonyv" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertKonyv_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InsertKonyvResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_InsertKonyv_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q4="http://schemas.datacontract.org/2004/07/System" name="detail" element="q4:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateKonyv_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateKonyv" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateKonyv_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateKonyvResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_UpdateKonyv_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q5="http://schemas.datacontract.org/2004/07/System" name="detail" element="q5:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteKonyv_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteKonyv" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteKonyv_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteKonyvResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteKonyv_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q6="http://schemas.datacontract.org/2004/07/System" name="detail" element="q6:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUsers_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUsers" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUsers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUsersResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUsers_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q7="http://schemas.datacontract.org/2004/07/System" name="detail" element="q7:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Logout_InputMessage">
+    <wsdl:part name="parameters" element="tns:Logout" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Logout_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Logout_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q8="http://schemas.datacontract.org/2004/07/System" name="detail" element="q8:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Kolcsonoz_InputMessage">
+    <wsdl:part name="parameters" element="tns:Kolcsonoz" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Kolcsonoz_OutputMessage">
+    <wsdl:part name="parameters" element="tns:KolcsonozResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Kolcsonoz_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q9="http://schemas.datacontract.org/2004/07/System" name="detail" element="q9:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Visszavisz_InputMessage">
+    <wsdl:part name="parameters" element="tns:Visszavisz" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Visszavisz_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VisszaviszResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Visszavisz_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q10="http://schemas.datacontract.org/2004/07/System" name="detail" element="q10:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_kolcsonzott_InputMessage">
+    <wsdl:part name="parameters" element="tns:kolcsonzott" />
+  </wsdl:message>
+  <wsdl:message name="IService1_kolcsonzott_OutputMessage">
+    <wsdl:part name="parameters" element="tns:kolcsonzottResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_kolcsonzott_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q11="http://schemas.datacontract.org/2004/07/System" name="detail" element="q11:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listToUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:listToUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listToUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:listToUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_listToUser_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q12="http://schemas.datacontract.org/2004/07/System" name="detail" element="q12:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoggedIn_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoggedIn" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoggedIn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoggedInResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_LoggedIn_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q13="http://schemas.datacontract.org/2004/07/System" name="detail" element="q13:Exception" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckRegister_InputMessage">
+    <wsdl:part name="parameters" element="tns:CheckRegister" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckRegister_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CheckRegisterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CheckRegister_ExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q14="http://schemas.datacontract.org/2004/07/System" name="detail" element="q14:Exception" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="ListKonyvek">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ListKonyvek" message="tns:IService1_ListKonyvek_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ListKonyvekResponse" message="tns:IService1_ListKonyvek_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/ListKonyvekExceptionFault" name="ExceptionFault" message="tns:IService1_ListKonyvek_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Register" message="tns:IService1_Register_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/RegisterResponse" message="tns:IService1_Register_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/RegisterExceptionFault" name="ExceptionFault" message="tns:IService1_Register_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Login" message="tns:IService1_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoginResponse" message="tns:IService1_Login_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/LoginExceptionFault" name="ExceptionFault" message="tns:IService1_Login_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InsertKonyv">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/InsertKonyv" message="tns:IService1_InsertKonyv_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/InsertKonyvResponse" message="tns:IService1_InsertKonyv_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/InsertKonyvExceptionFault" name="ExceptionFault" message="tns:IService1_InsertKonyv_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKonyv">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/UpdateKonyv" message="tns:IService1_UpdateKonyv_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/UpdateKonyvResponse" message="tns:IService1_UpdateKonyv_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/UpdateKonyvExceptionFault" name="ExceptionFault" message="tns:IService1_UpdateKonyv_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKonyv">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteKonyv" message="tns:IService1_DeleteKonyv_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteKonyvResponse" message="tns:IService1_DeleteKonyv_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/DeleteKonyvExceptionFault" name="ExceptionFault" message="tns:IService1_DeleteKonyv_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUsers">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUsers" message="tns:IService1_getUsers_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUsersResponse" message="tns:IService1_getUsers_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/getUsersExceptionFault" name="ExceptionFault" message="tns:IService1_getUsers_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Logout" message="tns:IService1_Logout_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LogoutResponse" message="tns:IService1_Logout_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/LogoutExceptionFault" name="ExceptionFault" message="tns:IService1_Logout_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Kolcsonoz">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Kolcsonoz" message="tns:IService1_Kolcsonoz_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/KolcsonozResponse" message="tns:IService1_Kolcsonoz_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/KolcsonozExceptionFault" name="ExceptionFault" message="tns:IService1_Kolcsonoz_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Visszavisz">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Visszavisz" message="tns:IService1_Visszavisz_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/VisszaviszResponse" message="tns:IService1_Visszavisz_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/VisszaviszExceptionFault" name="ExceptionFault" message="tns:IService1_Visszavisz_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="kolcsonzott">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/kolcsonzott" message="tns:IService1_kolcsonzott_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/kolcsonzottResponse" message="tns:IService1_kolcsonzott_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/kolcsonzottExceptionFault" name="ExceptionFault" message="tns:IService1_kolcsonzott_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="listToUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/listToUser" message="tns:IService1_listToUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/listToUserResponse" message="tns:IService1_listToUser_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/listToUserExceptionFault" name="ExceptionFault" message="tns:IService1_listToUser_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoggedIn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/LoggedIn" message="tns:IService1_LoggedIn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/LoggedInResponse" message="tns:IService1_LoggedIn_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/LoggedInExceptionFault" name="ExceptionFault" message="tns:IService1_LoggedIn_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckRegister">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CheckRegister" message="tns:IService1_CheckRegister_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CheckRegisterResponse" message="tns:IService1_CheckRegister_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/IService1/CheckRegisterExceptionFault" name="ExceptionFault" message="tns:IService1_CheckRegister_ExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ListKonyvek">
+      <soap:operation soapAction="http://tempuri.org/IService1/ListKonyvek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Register">
+      <soap:operation soapAction="http://tempuri.org/IService1/Register" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IService1/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="InsertKonyv">
+      <soap:operation soapAction="http://tempuri.org/IService1/InsertKonyv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateKonyv">
+      <soap:operation soapAction="http://tempuri.org/IService1/UpdateKonyv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteKonyv">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteKonyv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getUsers">
+      <soap:operation soapAction="http://tempuri.org/IService1/getUsers" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Logout">
+      <soap:operation soapAction="http://tempuri.org/IService1/Logout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Kolcsonoz">
+      <soap:operation soapAction="http://tempuri.org/IService1/Kolcsonoz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Visszavisz">
+      <soap:operation soapAction="http://tempuri.org/IService1/Visszavisz" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="kolcsonzott">
+      <soap:operation soapAction="http://tempuri.org/IService1/kolcsonzott" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="listToUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/listToUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="LoggedIn">
+      <soap:operation soapAction="http://tempuri.org/IService1/LoggedIn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="CheckRegister">
+      <soap:operation soapAction="http://tempuri.org/IService1/CheckRegister" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ExceptionFault">
+        <soap:fault use="literal" name="ExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost:8080/KonyvtarService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

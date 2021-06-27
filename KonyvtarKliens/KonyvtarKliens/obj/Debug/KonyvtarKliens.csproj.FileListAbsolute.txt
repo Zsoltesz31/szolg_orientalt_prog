@@ -1,0 +1,13 @@
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\bin\Debug\KonyvtarKliens.exe.config
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\bin\Debug\KonyvtarKliens.exe
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\bin\Debug\KonyvtarKliens.pdb
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\obj\Debug\KonyvtarKliens.csprojAssemblyReference.cache
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\obj\Debug\KonyvtarKliens.Form1.resources
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\obj\Debug\KonyvtarKliens.Properties.Resources.resources
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\obj\Debug\KonyvtarKliens.csproj.GenerateResource.cache
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\obj\Debug\KonyvtarKliens.csproj.CoreCompileInputs.cache
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\obj\Debug\KonyvtarKliens.exe
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\obj\Debug\KonyvtarKliens.pdb
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\obj\Debug\KonyvtarKliens.Form2.resources
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\obj\Debug\KonyvtarKliens.LoginForm.resources
+C:\Users\Zsolti\source\repos\KonyvtarKliens\KonyvtarKliens\obj\Debug\KonyvtarKliens.RegisterForm.resources

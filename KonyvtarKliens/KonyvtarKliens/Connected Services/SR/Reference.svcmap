@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="8e933cb6-c4ea-4e2c-b97e-395a2d2ca115" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8080/KonyvtarService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="KonyvtarService1.xsd" MetadataType="Schema" ID="8cf8ac83-b956-4c95-a2c2-78d1abd2873a" SourceId="1" SourceUrl="http://localhost:8080/KonyvtarService.svc?xsd=xsd0" />
+    <MetadataFile FileName="KonyvtarService2.xsd" MetadataType="Schema" ID="33bd34ae-5a1a-4239-a4b5-cf5da472374f" SourceId="1" SourceUrl="http://localhost:8080/KonyvtarService.svc?xsd=xsd1" />
+    <MetadataFile FileName="KonyvtarService.disco" MetadataType="Disco" ID="f6690c52-fa2a-4c75-9a4d-c4885040ab9b" SourceId="1" SourceUrl="http://localhost:8080/KonyvtarService.svc?disco" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="63c595a8-e3fb-49d9-aff3-725b71f2f69a" SourceId="1" SourceUrl="http://localhost:8080/KonyvtarService.svc?wsdl" />
+    <MetadataFile FileName="KonyvtarService.xsd" MetadataType="Schema" ID="7ad07a98-f95a-4b46-b869-d9117919bf54" SourceId="1" SourceUrl="http://localhost:8080/KonyvtarService.svc?xsd=xsd2" />
+    <MetadataFile FileName="KonyvtarService3.xsd" MetadataType="Schema" ID="fca2e6ee-59bc-4310-a69b-1ddc19ab4b16" SourceId="1" SourceUrl="http://localhost:8080/KonyvtarService.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
